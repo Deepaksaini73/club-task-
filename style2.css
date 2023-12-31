@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    background-color: rgb(109, 204, 215);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color:wheat;
+    display: block;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+header .siteName{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-weight: 900;
+    margin: 0 auto;
+}
+header ul{
+    list-style:none;
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+header ul li{
+    padding: 10px 15px 15px 10px;
+}
+a{
+    text-decoration: none;
+}
+header ul li a:hover,footer ul li a:hover{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.sidebar ul{
+    padding:0px;
+}
+.sidebar li{
+    padding-top: 30%;
+    border-bottom: 2px solid rgb(113, 109, 109);
+}
+.sidebar ul li a:hover{
+    color: red;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.theme2{
+    color: red;
+}
+.content{
+    grid-row-start:2;
+    grid-row-end:9;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    border: 2px solid rgb(71, 68, 68);
+    margin: 10px;
+    font-family:cursive;
+    background-color: white;
+   
+}
+.discription h3{
+    text-align: center;
+    border-bottom: 2px dashed red;
+}
+.electronics{
+    display: flex;
+    flex-wrap: wrap;
+}
+.electronics div{
+    border: 2px solid black;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.buynow{
+    border: 2px solid brown;
+    background-color: aquamarine;
+    border-radius: 90%;
+}
+img{
+    width: 100px;
+}
+img:hover{
+    width: 110px;
+}
+footer{
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-color: antiquewhite;
+}
+footer ul{
+    display: flex;
+    justify-content:space-around;
+    margin-left: -60px;
+}
